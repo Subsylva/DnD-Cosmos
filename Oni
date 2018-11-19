@@ -32,6 +32,7 @@
                 <span class="feature">Alignment.</span>Oni tend to lend towards Chaotic and Neutral alignments.<br/>
                 <span class="feature">Size.</span>Oni are slightly larger than humans. Your size is Medium.<br/>
                 <span class="feature">Speed.</span>Your base walking speed is 30 feet.<br/>
+                <span class="feature">Natural Liar.</span>Oni are masters of disguise and exceptionally good at lying. You have proficiency in the Deception skill.<br/>
                 <span class="feature">Languages.</span>You can speak, read, and write Common.<br/>
             </p>
         </description>
@@ -46,5 +47,32 @@
             <stat name="Speed" value="+30"/>
             <grant type="Size" name="ID_SIZE_MEDIUM" />
             <grant type="Language" name="ID_LANGUAGE_COMMON" />
+            <select type="Language" name="Language (Homunculus)" />
+            <grant type="Racial Trait" name="ID_WIKI_RACIAL_TRAIT_ONI_NATURAL_LIAR" />
         </rules>
-    </elements>
+    </element>
+
+    <element name="Natural Liar" type="Racial Trait" source="Subsylva" id="ID_WIKI_RACIAL_TRAIT_ONI_NATURAL_LIAR">
+        <description>
+            <p>Oni are masters of disguise and exceptionally good at lying. You have proficiency in the Deception skill.</p>
+        </description>
+        <sheet display="false">
+            <description>Oni are masters of disguise and exceptionally good at lying. You have proficiency in the Deception skill.</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_DECEPTION" />
+        </rules>
+    </element>
+  
+  <element name="Ability Score Increase (Strength)" type="Racial Trait" source="Subsylva" id="ID_WIKI_RACIAL_TRAIT_ONI_STRENGTH">
+    <supports>Oni</supports>
+    <requirements />
+    <description>
+      <p>Your Strength increases by 1.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <stat name="Strength" value="+1"/>
+    </rules>
+  </element>
+</elements>
