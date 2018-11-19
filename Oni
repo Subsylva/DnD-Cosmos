@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Oni</name>
+        <description>5e homebrew</description>
+        <author url="">Subsylva</author>
+        <update version="0.0.1">
+            <file name="race-oni.xml" url="" />
+        </update>
+    </info>
+
+    <element name="Oni" type="Race" source="Subsylva" id="ID_WIKI_RACE_ONI">
+        <description>
+            <p class="flavor">"As the sun fell from the sky and the land darkened, the bandits hunted the young elf through the woods. As they finally caught the defenseless elf, the smell of fresh soil assailed their noses. By the time one of them opened up their mouth to speak, they all lay dead upon the ground."</p>
+            <h4>PHYSICAL DESCRIPTION</h4>
+            <p>In their natural form, Oni appear like smaller ogres, with different colourful skin hues. They have tusks that protrude from their lower jaw, and short horns that protrude from their foreheads. They also normally have very long and unkempt hair, either black, grey, or white. Horns are an important appearance in Oni culture, the larger and more polished the horns symbolizes higher status and power. Having larger tusks however is seen to be more wild and feral, not civilised among Oni. Female Oni have larger horns, as they are the leaders in Oni society, being much more powerful and rare, while Male Oni normally have larger tusks. Oni can often find disguising themselves as other humanoid races to be quite easy, the main problem being covering up the tusks and horns.</p>
+            <h4>HISTORY</h4>
+            <p>Oni are spirits given form from the gods, made from the elements. The five elements that Oni are made of both change their appearance as well as abilities. While the first Oni were created by the gods, Oni are capable of reproducing with eachother, creating less powerful Oni. However, because female Oni are quite rare, the number of these Oni, called Heretical Oni, is very low.</p>
+            <h4>SOCIETY</h4>
+            <p>Oni normally are created by a specific god to serve a purpse, whether it to be to guard, deliver messages, or as part of an army. Therefore, Oni have very little interactions with eachother, unless they are created by the same god. The main Oni society is in the spirit world, as often when Oni sleep their spirits can leave their earthen bodies. The Oni use the spirit world as a place to share information and learn about other parts of the world, as well as interact with others of their kind. The leaders of the Oni in the spirit world are known as the True Godborn, a group of 7 female warriors regarded to be the first ever Oni created.</p>
+            <h4>ONI NAMES</h4>
+            <p>Oni are named by the patron god that created them, these names often reflecting their purpose or task.</p>
+            <p>
+                <span class="feature">Male:</span>Waka, Douji, Akuran, Yorozu, Ibaraki, Jizou, Hachiman, Daikoku, Akuma<br/>
+                <span class="feature">Female:</span>Hashi, Rairaku, Akane, Izami, Koyane, Sakuya, Benzen, Amematsu<br/>
+            </p>
+            <h4>ONI TRAITS</h4>
+            <p>Oni are spirits given form by the gods.</p>
+            <p>
+                <span class="feature">Ability Score Increase.</span>Your Strength score increases by 1.<br/>
+                <span class="feature">Age.</span>Oni can live several hundred years, some of the oldest living up to 1,000 years old.<br/>
+                <span class="feature">Alignment.</span>Oni tend to lend towards Chaotic and Neutral alignments.<br/>
+                <span class="feature">Size.</span>Oni are slightly larger than humans. Your size is Medium.<br/>
+                <span class="feature">Speed.</span>Your base walking speed is 30 feet.<br/>
+                <span class="feature">Languages.</span>You can speak, read, and write Common.<br/>
+            </p>
+        </description>
+        <sheet display="false" />
+        <setters>
+            <set name="names" type="male">Waka, Douji, Akuran, Yorozu, Ibaraki, Jizou, Hachiman, Daikoku, Akuma</set>
+            <set name="names" type="female">Hashi, Rairaku, Akane, Izami, Koyane, Sakuya, Benzen, Amematsu</set>
+            <set name="names-format">$(name)</set>
+        </setters>
+        <rules>
+            <stat name="Strength" value="+1"/>
+            <stat name="Speed" value="+30"/>
+            <grant type="Size" name="ID_SIZE_MEDIUM" />
+            <grant type="Language" name="ID_LANGUAGE_COMMON" />
+        </rules>
+    </element>
+  </element>
+</elements>
