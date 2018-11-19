@@ -5,7 +5,7 @@
         <description>5e homebrew</description>
         <author url="">Subsylva</author>
         <update version="0.0.1">
-            <file name="race-oni.xml" url="" />
+            <file name="race-oni.xml" url="https://raw.githubusercontent.com/Subsylva/DnD-Cosmos/master/Oni" />
         </update>
     </info>
 
