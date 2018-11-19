@@ -47,5 +47,4 @@
             <grant type="Size" name="ID_SIZE_MEDIUM" />
             <grant type="Language" name="ID_LANGUAGE_COMMON" />
         </rules>
-    </element>
-</elements>
+    </elements>
